@@ -1,0 +1,23 @@
+# Define a new collective variable
+colvar {
+        # Name of this collective variable (used for output and referencing)
+        name alp
+        
+        # Define the type of collective variable as alpha angle
+        alpha {
+                # Specify the segment ID in the PSF file to analyze
+                psfSegID V1
+                
+                # Define the range of residues to include in the calculation
+                # This will calculate the alpha angle for residues 2 through 30
+                residueRange 2-30
+        }
+        
+        # Set the upper boundary for the alpha angle value
+        # Values will be clamped to this maximum
+	upperBoundary 1.0
+        
+        # Set the lower boundary for the alpha angle value
+        # Values will be clamped to this minimum
+	lowerBoundary 0.0
+} 
