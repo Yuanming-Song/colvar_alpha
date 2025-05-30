@@ -1,6 +1,7 @@
 # Template_colvar Directory
 
 This directory contains template files for calculating alpha scores of peptides using VMD's Colvars module.
+For detailed documentation on the alpha score collective variable in Colvars, refer to the [Colvars Reference Manual](https://colvars.github.io/master/colvars-refman-vmd.html#sec:cvc_alpha).
 
 ## Files
 - `template_colvar.tcl`: Tcl script for running the analysis
